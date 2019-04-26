@@ -1,6 +1,6 @@
 {
   "name": "Newsbook",
-  "version": "0.0.1",
+  "version": "0.5",
   "description": "Get rid of the drama and hide all the comments!",
   "permissions": ["activeTab", "declarativeContent"],
   "background": {

@@ -2,11 +2,17 @@
   "name": "Newsbook",
   "version": "0.5",
   "description": "Get rid of the drama and hide all the comments!",
-  "permissions": ["activeTab", "declarativeContent"],
+  "permissions": ["activeTab", "declarativeContent", "storage"],
   "background": {
       "scripts": ["background.js"],
       "persistent": false
     },
+    "content_scripts": [
+      {
+        "matches": ["*://*.facebook.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
   "page_action": {
     "default_popup": "popup.html",
       "default_icon": {
